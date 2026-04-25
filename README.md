@@ -47,23 +47,6 @@ pip install -r requirements.txt
 
 _(Ensure you have `pycryptodome` installed to handle AES-encrypted PDFs, as well as `pandas`, `scikit-learn`, `statsmodels`, and `openai`)_.
 
-### Running the Analysis
-
-To reproduce the regression tables and ablation study reported in the paper, execute the final analysis script:
-
-```bash
-python src/04_regression_analysis.py
-```
-
-This will read the data from `data/final_analysis_data.csv` and `data/llm_extracted_factors_few_shot.csv` and output the performance metrics (MSE, R²) and visualization figures to the `output/` directory.
-
-### API Usage
-
-To run the extraction scripts (`02_zero_shot_extraction.py` and `03_few_shot_extraction.py`) on your own text files, you must set your OpenAI API key as an environment variable:
-
-```bash
-export OPENAI_API_KEY="your-api-key-here"
-```
 
 ## Citation
 
